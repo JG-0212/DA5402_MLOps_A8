@@ -1,0 +1,7 @@
+{
+  "loss": 1287.4591064453125,
+  "val_loss": 1183.4693603515625,
+  "avg_edit_distance": 21.0,
+  "epoch": 4,
+  "global_step": 10
+}
