@@ -1,12 +1,1 @@
-2025-04-12 23:13:44,036 - INFO - Initialized logging and set up random seeds
-2025-04-12 23:13:45,782 - INFO - MLFlow server set up at http://127.0.0.1:8080 and experiment initialized
-2025-04-12 23:13:50,587 - INFO - Successfully read label file
-2025-04-12 23:13:51,934 - INFO - Successfully split train-valid-test=0.9:0.05:0.05 labels
-2025-04-12 23:13:51,935 - INFO - Original dataset has 96456 datapoints
-2025-04-12 23:13:53,957 - INFO - Corrected dataset has 96454 datapoints
-2025-04-12 23:13:54,684 - INFO - Maximum length: 21
-2025-04-12 23:13:54,684 - INFO - Vocab size: 78
-2025-04-12 23:14:03,324 - INFO - Successfully cleaned all labels
-2025-04-12 23:14:10,484 - INFO - Successfully initialized lookup tables for character to number conversion
-2025-04-12 23:14:37,396 - INFO - Successfully created train, valid, test datasets
-2025-04-12 23:14:44,661 - INFO - Model successfully built
+2025-04-13 00:12:28,855 - INFO - Initialized logging and set up random seeds
