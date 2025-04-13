@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/754929904376585580/c66a3dd2e10745d38dbc5e24ad03ef0a/artifacts
+end_time: 1744442860678
+entry_point_name: ''
+experiment_id: '754929904376585580'
+lifecycle_stage: active
+run_id: c66a3dd2e10745d38dbc5e24ad03ef0a
+run_name: bisleri
+run_uuid: c66a3dd2e10745d38dbc5e24ad03ef0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744442742341
+status: 3
+tags: []
+user_id: jayagowtham

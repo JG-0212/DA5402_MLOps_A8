@@ -1,0 +1,20 @@
+name: a8
+
+python_env: python_env.yaml
+
+entry_points:
+  serve_model:
+    parameters:
+      model_version: {type: string, default: '1'}
+    command: >
+      mlflow models serve -m "models:/cnn_text_identifier/{model_version}" --host 127.0.0.1 --port 8000 & 
+      echo "Model server started in the background" 
+
+  poster:
+    command: >
+      until curl -s http://localhost:8000/health; do echo "Waiting for server to start..."; sleep 2; done &&
+      curl -s -X POST http://localhost:8000/invocations -H 'Content-Type: application/json' -d @text_image.json -o prediction.json
+  inferrer:
+    parameters:
+      model_version: {type: string, default: '1'}
+    command: "python3 text_identifier.py {model_version}"

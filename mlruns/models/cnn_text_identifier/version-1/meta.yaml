@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1744560848992
+current_stage: None
+description: ''
+last_updated_timestamp: 1744560848992
+name: cnn_text_identifier
+run_id: 6ae3d46d42ac411c9522faa90bd0217a
+run_link: ''
+source: mlflow-artifacts:/754929904376585580/6ae3d46d42ac411c9522faa90bd0217a/artifacts/models
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/754929904376585580/6ae3d46d42ac411c9522faa90bd0217a/artifacts/models
+user_id: null
+version: 1
