@@ -62,8 +62,26 @@
   
   ```
 ## Plots
-<p align="center">
-  <img src="loss.png" width="200" style="display: inline-block" />
-  <img src="val_loss.png" width="200" style="display: inline-block" />
-  <img src="avg_edit_distance.png" width="200" style="display: inline-block" />
-</p>
+<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap;">
+  <!-- Plot 1 with title -->
+  <div style="text-align: center;">
+    <h3>avg_edit_distance</h3> <!-- Title for image 1 -->
+    <img src="avg_edit_distance.png" />
+  </div>
+  
+  <!-- Plot 2 with title -->
+  <div style="text-align: center;">
+    <h3>train_loss</h3> <!-- Title for image 2 -->
+    <img src="loss.png"/>
+  </div>
+  
+  <!-- Plot 3 with title -->
+  <div style="text-align: center;">
+    <h3>val_loss</h3> <!-- Title for image 3 -->
+    <img src="val_loss.png" />
+  </div>
+</div>
+
+
+
+
