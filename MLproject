@@ -16,9 +16,10 @@ entry_points:
 
   poster:
     parameters:
+      host: {type: string, default: '127.0.0.1'}
       port: {type: string, default: '8000'}
     command: >
-      curl -s -X POST http://localhost:{port}/invocations -H 'Content-Type: application/json' -d @project/text_image.json -o project/prediction.json
+      curl -s -X POST http://{host}:{port}/invocations -H 'Content-Type: application/json' -d @project/text_image.json -o project/prediction.json
 
   inferrer:
     parameters:
