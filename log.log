@@ -1,5 +1,5 @@
-2025-04-14 21:25:48,019 - Identifier - INFO - Succesfully set up mlflow tracking URI
-2025-04-14 21:25:48,060 - Identifier - INFO - Succesfully retrieved model
-2025-04-14 21:25:48,154 - Identifier - INFO - Successfully retrieved model metadata
-2025-04-14 21:25:48,298 - Identifier - INFO - Successfully rebuilt StringLookpu layer for inference
-2025-04-14 21:25:48,400 - Identifier - INFO - Prediction successfully decoded
+2025-04-14 22:24:49,974 - Identifier - INFO - Succesfully set up mlflow tracking URI
+2025-04-14 22:24:50,094 - Identifier - INFO - Succesfully retrieved model
+2025-04-14 22:24:50,897 - Identifier - INFO - Successfully retrieved model metadata
+2025-04-14 22:24:51,033 - Identifier - INFO - Successfully rebuilt StringLookpu layer for inference
+2025-04-14 22:24:51,137 - Identifier - INFO - Prediction successfully decoded

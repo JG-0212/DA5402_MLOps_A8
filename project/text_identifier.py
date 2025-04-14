@@ -89,6 +89,6 @@ if __name__ == '__main__':
 
     out = np.array(pred["predictions"])
 
-    print(decode_batch_predictions(out, num_to_char, max_len))
+    print(f"The predicted word is {decode_batch_predictions(out, num_to_char, max_len)[0]}")
     
     logger.info("Prediction successfully decoded")
