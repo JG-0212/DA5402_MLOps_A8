@@ -1,1 +1,5 @@
-2025-04-13 00:12:28,855 - INFO - Initialized logging and set up random seeds
+2025-04-14 21:25:48,019 - Identifier - INFO - Succesfully set up mlflow tracking URI
+2025-04-14 21:25:48,060 - Identifier - INFO - Succesfully retrieved model
+2025-04-14 21:25:48,154 - Identifier - INFO - Successfully retrieved model metadata
+2025-04-14 21:25:48,298 - Identifier - INFO - Successfully rebuilt StringLookpu layer for inference
+2025-04-14 21:25:48,400 - Identifier - INFO - Prediction successfully decoded

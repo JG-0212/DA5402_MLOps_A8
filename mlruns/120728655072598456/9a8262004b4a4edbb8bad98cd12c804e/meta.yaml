@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jayagowtham/Documents/MLOps/A8/mlruns/120728655072598456/9a8262004b4a4edbb8bad98cd12c804e/artifacts
+end_time: 1744646127323
+entry_point_name: ''
+experiment_id: '120728655072598456'
+lifecycle_stage: active
+run_id: 9a8262004b4a4edbb8bad98cd12c804e
+run_name: fearless-cat-958
+run_uuid: 9a8262004b4a4edbb8bad98cd12c804e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744646125471
+status: 3
+tags: []
+user_id: jayagowtham

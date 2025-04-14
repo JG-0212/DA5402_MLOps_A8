@@ -9,7 +9,7 @@ import numpy as np
 from keras.layers import StringLookup
 from mlflow.tracking import MlflowClient
 
-logger = logging.getLogger('Inference')
+logger = logging.getLogger('Identifier')
 logging.basicConfig(filename='log.log', filemode='w', encoding='utf-8', level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
         logger.exception(f"Error in set up of tracker URI : {e}")
 
     model_name = "cnn_text_identifier"
-    version = sys.argv[0]
+    version = int(sys.argv[1])
     client = MlflowClient()
 
     try:
@@ -80,10 +80,12 @@ if __name__ == '__main__':
         logger.exception(f"Error in rebuilding StringLookup layer")
     
     
-    current_directory = os.getcwd()
+    parent_directory = os.getcwd()
+    current_directory = os.path.join(parent_directory,'project')
+    file_path = os.path.join(current_directory, 'prediction.json')
 
-    parent_directory = os.path.abspath(os.path.join(current_directory, '..'))
-    pred = json.load(os.path.join(parent_directory,'prediction.json'))
+    with open(file_path, 'r') as f:
+        pred = json.load(f)
 
     out = np.array(pred["predictions"])
 

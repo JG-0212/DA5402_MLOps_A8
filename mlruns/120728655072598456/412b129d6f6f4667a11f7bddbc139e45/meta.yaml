@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jayagowtham/Documents/MLOps/A8/mlruns/120728655072598456/412b129d6f6f4667a11f7bddbc139e45/artifacts
+end_time: 1744646149651
+entry_point_name: ''
+experiment_id: '120728655072598456'
+lifecycle_stage: active
+run_id: 412b129d6f6f4667a11f7bddbc139e45
+run_name: ambitious-auk-664
+run_uuid: 412b129d6f6f4667a11f7bddbc139e45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744646137686
+status: 3
+tags: []
+user_id: jayagowtham
