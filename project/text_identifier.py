@@ -10,7 +10,7 @@ from keras.layers import StringLookup
 from mlflow.tracking import MlflowClient
 
 logger = logging.getLogger('Identifier')
-logging.basicConfig(filename='log.log', filemode='w', encoding='utf-8', level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='log.log', filemode='a', encoding='utf-8', level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
@@ -75,7 +75,7 @@ if __name__ == '__main__':
         num_to_char = StringLookup(
             vocabulary=vocab, mask_token=None, invert=True
         )
-        logger.info(f"Successfully rebuilt StringLookpu layer for inference")
+        logger.info(f"Successfully rebuilt StringLookup layer for inference")
     except Exception as e:
         logger.exception(f"Error in rebuilding StringLookup layer")
     
