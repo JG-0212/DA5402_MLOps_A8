@@ -57,6 +57,11 @@
   
   #in another terminal
   mlflow run . -e sampler --experiment-name mlp     #samples an image from test_inputs/
+  
+  #please skip the sampler endpoint, if inference is to be done on custom image
+  #convert the image from a 4 dimensional tensor into a 4-dimensional list and save in project/text_image.json
+  #Instead of taking it as a parameter we do this, to not break the workflow
+   
   mlflow run . -e poster --experiment-name mlp      #sends a POST request through CURL
   mlflow run . -e inferrer --experiment-name mlp    #decodes the prediction
   
