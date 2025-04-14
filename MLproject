@@ -6,17 +6,23 @@ entry_points:
   serve_model:
     parameters:
       model_version: {type: string, default: '1'}
+      host: {type: string, default: '127.0.0.1'}
+      port: {type: string, default: '8000'}
     command: >
-      mlflow models serve -m "models:/cnn_text_identifier/{model_version}" --host 127.0.0.1 --port 8000 
+      mlflow models serve -m "models:/cnn_text_identifier/{model_version}" --host {host} --port {port} 
 
   sampler:
     command: "python3 project/sampler.py"
-    
+
   poster:
+    parameters:
+      port: {type: string, default: '8000'}
     command: >
-      curl -s -X POST http://localhost:8000/invocations -H 'Content-Type: application/json' -d @project/text_image.json -o project/prediction.json
+      curl -s -X POST http://localhost:{port}/invocations -H 'Content-Type: application/json' -d @project/text_image.json -o project/prediction.json
 
   inferrer:
     parameters:
       model_version: {type: string, default: '1'}
-    command: "python3 project/text_identifier.py {model_version}"
+      host: {type: string, default: '127.0.0.1'}
+      port: {type: string, default: '8080'}
+    command: "python3 project/text_identifier.py {model_version} {host} {port}"

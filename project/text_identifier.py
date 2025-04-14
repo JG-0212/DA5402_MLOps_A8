@@ -36,7 +36,7 @@ def decode_batch_predictions(pred, num_to_char, max_len):
 
 if __name__ == '__main__':
     try:
-        mlflow.set_tracking_uri("http://127.0.0.1:8080")
+        mlflow.set_tracking_uri(f"http://{sys.argv[2]}:{sys.argv[3]}")
         logger.info("Succesfully set up mlflow tracking URI")
     except Exception as e:
         logger.exception(f"Error in set up of tracker URI : {e}")
