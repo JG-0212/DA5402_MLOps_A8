@@ -48,12 +48,12 @@
   pip install -r requirements.txt
   
   #serve the mlflow server
-  mlflow server --host 127.0.0.1 --port 8080
+  mlflow server --host 127.0.0.1 --port 8080  #replace host and port
   
   #open another terminal window
   #set mlflow tracking uri as environment variable for model identification
-  export MLFLOW_TRACKING_URI=http://localhost:8080
-  mlflow run . -e serve_model --experiment-name mlp #can give model version as parameter
+  export MLFLOW_TRACKING_URI=http://localhost:8080 #replace host and port
+  mlflow run . -e serve_model --experiment-name mlp #can give model version, host and port as parameter
   
   #in another terminal
   mlflow run . -e sampler --experiment-name mlp     #samples an image from test_inputs/
@@ -62,8 +62,8 @@
   #convert the image from a 4 dimensional tensor into a 4-dimensional list and save in project/text_image.json
   #Instead of taking it as a parameter we do this, to not break the workflow
    
-  mlflow run . -e poster --experiment-name mlp      #sends a POST request through CURL
-  mlflow run . -e inferrer --experiment-name mlp    #decodes the prediction
+  mlflow run . -e poster --experiment-name mlp      #sends a POST request through CURL, host, port as parameter
+  mlflow run . -e inferrer --experiment-name mlp    #decodes the prediction, host, mlflow tracking port as parameter
   
   ```
 ## Plots
