@@ -33,6 +33,9 @@
 │   ├── text_identifier.py
 │   └── text_image.json
 ├── python_env.yaml
+├── loss.png
+├── val_loss.png
+├── avg_edit_distance.png
 ├── README.md
 └── requirements.txt
 ```
@@ -59,3 +62,8 @@
   
   ```
 ## Plots
+<p align="center">
+  <img src="loss.png" width="200" style="display: inline-block" />
+  <img src="val_loss.png" width="200" style="display: inline-block" />
+  <img src="avg_edit_distance.png" width="200" style="display: inline-block" />
+</p>
