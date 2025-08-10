@@ -1,6 +1,7 @@
 ## Directory structure
 
 ```
+├── DA5402_MLOPS_A8.pdf #problem statement
 ├── handwriting_classifier.ipynb
 ├── log.log
 ├── mlartifacts
